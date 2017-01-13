@@ -25,8 +25,10 @@ class Book{
 	}
 	
 	protected void finalize(){
+		System.out.println("finalize...");
 		if(this.checkOut){
 			System.out.println("Error: checked out!!");
 		}
+		System.out.println("finalize...end...");
 	}
 }
